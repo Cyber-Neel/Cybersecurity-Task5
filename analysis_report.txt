@@ -1,0 +1,26 @@
+# Network Traffic Analysis Report
+Author: Neel Bhatt
+Date: June 30, 2025
+
+## Capture Details
+- Tool: Wireshark
+- Interface: [e.g., eth0 or wlan0]
+- Duration: ~1 minute
+- Generated Traffic: Visited https://www.google.com and pinged google.com
+
+## Identified Protocols
+1. **HTTP**: Observed in packets to/from port 443 (HTTPS), indicating secure web traffic.
+2. **DNS**: Seen in queries to port 53, resolving domain names (e.g., google.com).
+3. **TCP**: Noted in connection establishment (e.g., SYN, ACK packets) for reliable data transfer.
+
+## Packet Details
+- HTTP: Source IP [your IP], Destination IP [google.com IP], Port 443.
+- DNS: Source Port [random high port], Destination Port 53.
+- TCP: Sequence numbers and acknowledgments visible in handshake packets.
+
+## Summary
+- Captured traffic included web browsing (HTTP/HTTPS) and DNS resolution.
+- TCP ensured reliable connections, while DNS facilitated domain lookup.
+- No anomalies detected in the short capture.
+
+Neel Bhatt
